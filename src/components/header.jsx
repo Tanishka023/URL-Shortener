@@ -13,7 +13,7 @@ import { FaSignOutAlt, FaLink } from 'react-icons/fa'; // Import the icons
 
 const Header = () => {
   const navigate = useNavigate();
-  const user = true; // Replace with actual auth logic
+  const user = false; // Replace with actual auth logic
 
   return (
     <nav className="relative flex items-center justify-between px-6 py-4 bg-gray-800 text-white shadow-md">
