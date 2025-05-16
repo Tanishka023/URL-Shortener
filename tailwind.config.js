@@ -1,19 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-  "./src/**/*.{js,ts,jsx,tsx}",
-  "./components/**/*.{js,ts,jsx,tsx}"
-],
-
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class',
   theme: {
     extend: {
-      colors: {
-        muted: '#f5f5f5',
-        'muted-foreground': '#a1a1aa',
-        background: '#ffffff',
-        foreground: '#000000',
-        input: '#e2e8f0',
-        ring: '#3b82f6',
+      fontFamily: {
+        sans: [
+          'Inter',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'sans-serif',
+        ],
+      },
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
+      },
+      animation: {
+        'bounce-slow': 'bounce 3s infinite',
+      },
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
       },
     },
   },
